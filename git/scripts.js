@@ -7,12 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const name = document.getElementById("name").value;
         const email = document.getElementById("email").value;
         const phone = document.getElementById("phone").value;
+        const date = document.getElementById("date").value;
         const time = document.getElementById("time").value;
         const guests = document.getElementById("guests").value;
         const table = document.getElementById("table").value;
 
         // Check if all form fields are filled out
-        if (!name || !email || !phone || !time || !guests || !table) {
+        if (!name || !email || !phone || !date  || !time || !guests || !table) {
             alert("Please fill out all fields.");
             return;
         }
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <strong>Name:</strong> ${name}<br>
             <strong>Phone:</strong> ${phone}<br>
             <strong>Email:</strong> ${email}<br>
+            <strong>Date:</strong> ${date}<br>
             <strong>Reservation Time:</strong> ${time}<br>
             <strong>Number of People:</strong> ${guests}<br>
             <strong>Table:</strong> ${table}
