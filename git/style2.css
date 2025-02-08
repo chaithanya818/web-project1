@@ -85,8 +85,8 @@
   .about img {
    
     width: 100%;
-    max-width: 500px;
-    margin-top: 2rem;
+    max-width: 600px;
+    margin-top: 4rem;
   }
   
   .menu-preview {
@@ -113,7 +113,7 @@
   
   .contact {
     background-color: #333;
-    color: #fff;
+    color: #c6c7cd;
   }
   
   .contact .contact-details {
@@ -200,9 +200,9 @@ body {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #a8b2ca;
+  background-color: #bb9fd0;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(24, 67, 195, 0.1);
+  box-shadow: 0 0 10px rgba(44, 47, 55, 0.1);
 }
 
 .reservation-section h2 {
@@ -241,7 +241,7 @@ button:hover {
 
 /* Confirmation Message */
 #confirmation-message {
-  background-color: #796f85;
+  background-color: #bfaed3;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
