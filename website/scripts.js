@@ -34,4 +34,9 @@ document.getElementById("reservation-form").addEventListener("submit", function(
 
   // Optionally, reset the form after submission
   document.getElementById("reservation-form").reset();
+
+  // Hide the confirmation message after a few seconds (Optional)
+  setTimeout(function() {
+    document.getElementById("confirmation-message").classList.add("hidden");
+  }, 5000); // Hides the message after 5 seconds
 });

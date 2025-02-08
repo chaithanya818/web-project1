@@ -93,6 +93,8 @@
     max-width: 600px;
     margin-top: 4rem;
   }
+
+  
   
   .menu-preview {
     background-color: #968ce7;
@@ -100,13 +102,17 @@
   
   .menu-items {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Align items to the left */
     margin-top: 2rem;
+    overflow-x: auto;  /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks for menu items */
+    padding: 10px 0; /* Optional: Add some padding to the top and bottom */
   }
   
   .menu-item {
     margin: 0 1rem;
     text-align: center;
+    display: inline-block; /* Ensure the items stay inline */
   }
   
   .menu-item img {
@@ -115,6 +121,21 @@
     object-fit: cover;
     border-radius: 8px;
   }
+  
+  /* Optional: Add a style to hide scrollbar for cleaner appearance */
+  .menu-items::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .menu-items::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  
+  .menu-items::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
 
 /* 
   button {
