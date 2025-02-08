@@ -37,3 +37,19 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById("reservation-form").reset();
     });
 });
+let currentIndex = 0;
+
+function slide(direction) {
+  const menuItems = document.querySelector('.menu-items');
+  const items = document.querySelectorAll('.menu-item');
+  const totalItems = items.length;
+  const itemWidth = items[0].offsetWidth + 20; // Added margin adjustment
+
+  if (direction === 'left') {
+    currentIndex = (currentIndex === 0) ? totalItems - 1 : currentIndex - 1;
+  } else if (direction === 'right') {
+    currentIndex = (currentIndex === totalItems - 1) ? 0 : currentIndex + 1;
+  }
+
+  menuItems.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
