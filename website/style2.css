@@ -31,7 +31,11 @@
     margin: 0 15px;
   }
   
- 
+  header .nav ul li a {
+    color: #59a53e;
+    text-decoration: none;
+    font-weight: bold;
+  }
   
  
   
