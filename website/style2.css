@@ -34,21 +34,26 @@
   header .nav ul li a {
     color: #59a53e;
     text-decoration: none;
-    font-weight: bold;
-  }
+    font-weight:bold;
+  }
   
  
   
-  .hero {
-    position: relative;
-    background: url('background4.png') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #230304;
-    text-align: center;
-  }
+.hero {
+  position: relative; /* Keeps the element in its normal flow but allows for absolute positioning of children */
+  background: url('background4.png') no-repeat center center/cover; /* Centers the image with no repeat and covers the entire container */
+  height: 100vh; /* Makes the height of the hero section equal to the viewport height */
+  width: 100%; /* Ensures the element takes the full width */
+  display: flex; /* Flexbox to center content both horizontally and vertically */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  color: #230304; /* Sets the text color to dark red */
+  text-align: center; /* Centers text inside the element */
+  overflow: hidden; /* Prevents overflow if the content inside exceeds the bounds of the hero section */
+  background-size: cover; /* Ensures the background image fully covers the section */
+  background-position: center; 
+}
+
   
   .hero::before {
     content: '';
