@@ -64,10 +64,85 @@
         <h3>Combo Meal</h3>
       </div>
     </div>
-    <a href="#reservation" class="cta-button">Reserve a Table</a>
+    
+  </section>
+  
+
+    
+
+    
+
+    <!-- Reservation Table Section -->
+    <section id="reservation" section class="reservation-section">
+      <script src="scripts.js"></script>
+    
+
+     
+      <body>
+      
+          
+              
+    <div class="container">
+        <!-- Reservation Form -->
+        <h2>Restaurant Table Reservation</h2>
+        <form id="reservation-form">
+            <!-- Name -->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+            <!-- Phone -->
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+            <!-- Date -->
+            <label for="time">Reservation Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <!-- Number of People -->
+            <label for="guests">Number of People</label>
+            <input type="number" id="guests" name="guests" required placeholder="Enter number of guests" min="1">
+
+            <!-- Table Selection -->
+            <label for="table">Select a Table</label>
+            <select id="table" name="table" required>
+                <option value="">Choose a table</option>
+                <option value="Table 1">Table 1</option>
+                <option value="Table 2">Table 2</option>
+                <option value="Table 3">Table 3</option>
+                <option value="Table 4">Table 4</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit">Book Table</button>
+        </form>
+
+        <!-- Confirmation Message -->
+        <div id="confirmation-message" class="hidden">
+            <h3>Reservation Successfully Booked!</h3>
+            <p id="reservation-details"></p>
+        </div>
+    </div>
   </section>
 
-  <!-- Contact Section -->
+    
+</body>
+</html>
+
+                 
+             
+       
+      
+      
+    
+        
+          
+
+
+  
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <p>We'd love to hear from you! Reach out for reservations or inquiries.</p>
