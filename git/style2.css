@@ -10,7 +10,7 @@
   }
   
   header {
-    background-color: #333;
+    background-color: #282250 ;
     color: #b72222;
     padding: 1rem;
     display: flex;
@@ -37,24 +37,31 @@
     font-weight: bold;
   }
   
-  header .cta-button {
-    background-color: #b3b51b;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    color: #fff;
-    text-decoration: none;
-  }
+ 
   
   .hero {
-    background: url('background2.png') no-repeat center center/cover;
+    position: relative;
+    background: url('background4.png') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #230304;
     text-align: center;
   }
   
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(80px); 
+    z-index: -1; 
+  }
+ 
   .hero h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
@@ -72,16 +79,18 @@
   section {
     padding: 4rem 2rem;
     text-align: center;
+    background-color: #48426c;
   }
   
   .about img {
+   
     width: 100%;
     max-width: 500px;
     margin-top: 2rem;
   }
   
   .menu-preview {
-    background-color: #d26767;
+    background-color: #968ce7;
   }
   
   .menu-items {
