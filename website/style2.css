@@ -10,8 +10,8 @@
   }
   
   header {
-    background-color: #282250 ;
-    color: #b72222;
+    background-color: #64329d ;
+    color: #972c2c;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,7 @@
   header .logo img {
     height: 40px;
   }
-  
+   
   header .nav ul {
     display: flex;
     list-style-type: none;
@@ -32,7 +32,7 @@
   }
   
   header .nav ul li a {
-    color: #59a53e;
+    color: #91e971;
     text-decoration: none;
     font-weight:bold;
   }
@@ -40,17 +40,17 @@
  
   
 .hero {
-  position: relative; /* Keeps the element in its normal flow but allows for absolute positioning of children */
-  background: url('background4.png') no-repeat center center/cover; /* Centers the image with no repeat and covers the entire container */
-  height: 100vh; /* Makes the height of the hero section equal to the viewport height */
-  width: 100%; /* Ensures the element takes the full width */
-  display: flex; /* Flexbox to center content both horizontally and vertically */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  color: #230304; /* Sets the text color to dark red */
-  text-align: center; /* Centers text inside the element */
-  overflow: hidden; /* Prevents overflow if the content inside exceeds the bounds of the hero section */
-  background-size: cover; /* Ensures the background image fully covers the section */
+  position: relative; 
+  background: url('background8.png') no-repeat center center/cover;  
+  height: 100vh; 
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  color: #230304; 
+  text-align: center; 
+  overflow: hidden; 
+  background-size: cover; 
   background-position: center; 
 }
 
@@ -68,23 +68,23 @@
   }
  
   .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 0.5rem;
   }
   
   .hero p {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     margin-bottom: 1.5rem;
   }
   
   .hero .cta-button {
-    font-size: 1.1rem;
+    font-size: 2.2rem;
   }
   
   section {
     padding: 4rem 2rem;
     text-align: center;
-    background-color: #827aae;
+    background-color: #8035ae;
   }
   
   .about img {
@@ -163,7 +163,7 @@ button:hover {
 /* Styling for the cart section */
 #cart {
   margin-top: 30px;
-  background-color: #827aae;
+  background-color: #874dab;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
